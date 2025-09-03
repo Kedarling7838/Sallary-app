@@ -6,7 +6,7 @@ from sklearn.preprocessing import OrdinalEncoder
 from streamlit_lottie import st_lottie
 import requests
 
-model = joblib.load("C:\\Users\\Asus\\Sallary_model.pkl")
+model = joblib.load("C:\Users\Asus\OneDrive\Desktop\sallaryapp\Sallary_model.pkl")
 
 def load_lottie_url(url: str):
     r = requests.get(url)
@@ -58,3 +58,4 @@ if st.button("Predict Salary"):
 
         st.success(f"Predicted Salary: ₹ {int(salary):,}")
         st.balloons()
+
